@@ -68,7 +68,10 @@ function buildHelpMenu({ user, bot, lang }) {
 			.setLabel("Invite Bot")
 			.setStyle(ButtonStyle.Link)
 			.setEmoji(ZiIcons.fillter)
-			.setURL(config.botConfig?.InviteBot || `https://discord.com/oauth2/authorize?client_id=1468927389038936207&permissions=8&integration_type=0&scope=bot`),
+			.setURL(
+				config.botConfig?.InviteBot ||
+					`https://discord.com/oauth2/authorize?client_id=1468927389038936207&permissions=8&integration_type=0&scope=bot`,
+			),
 	);
 	return (code = {
 		embeds: [embed],
